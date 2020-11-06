@@ -9,6 +9,6 @@
 @endsection
 
 @section('content')
-    Has realitzat una {{$titolPagina}} de dos números: <br>
+    Has realitzat una <strong>{{$titolPagina}}</strong> de dos números: <br>
     El primer dels dígits és {{$primerNumero}} i el segon és {{$segonNumero}}.
 @endsection

@@ -18,4 +18,10 @@ Route::get('/', function() {
     return view('welcome');
 });
 
-Route::get('/suma/{num1}/{num2}', [calculadora::class, 'suma']);
+Route::get('/suma/{operand1}/{operand2}', [calculadora::class, 'suma']);
+
+Route::get('/resta/{operand1}/{operand2}', [calculadora::class, 'resta']);
+
+Route::get('/multiplica/{operand1}/{operand2}', [calculadora::class, 'multiplica']);
+
+Route::get('/divideix/{operand1}/{operand2}', [calculadora::class, 'divideix']);
