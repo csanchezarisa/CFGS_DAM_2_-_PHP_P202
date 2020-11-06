@@ -64,3 +64,7 @@
         }
     </script>
 @endsection
+
+@section('botoInici')
+  visibility: hidden;
+@endsection
