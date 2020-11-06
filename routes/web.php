@@ -15,7 +15,7 @@ use App\Http\Controllers\calculadora;
 */
 
 Route::get('/', function() {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/suma/{operand1}/{operand2}', [calculadora::class, 'suma']);

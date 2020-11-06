@@ -68,7 +68,7 @@ class calculadora extends Controller
                 return view("resultat", ["titolPagina" => "Divisió", "primerNumero" => $operand1, "segonNumero" => $operand2, "resultat" => $resultat, "operacioRealitzada" => "/"]);
 
             }
-            catch (Exception $e) {
+            catch (\Exception $e) {
 
                 return view("errors.error", ["titolPagina" => "ERROR", "primerNumero" => $operand1, "segonNumero" => $operand2, "motiu" => "No es pot dividir entre 0!"]);
 
